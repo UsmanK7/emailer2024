@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        @font-face {
+            font-family: 'Gotham';
+            src: url('path/to/Gotham.woff2') format('woff2'),
+                /* Modern Browsers */
+                url('path/to/Gotham.woff') format('woff');
+            /* Older Browsers */
+
+        }
+
+        /* Reset default styles */
+       
+        body,html {
+            font-family: 'Gotham', Arial, sans-serif;
+            /* Default text color */
+            background-color: #FFFf;
+            /* Default background color */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        /* Dark mode styles */
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            /* background-color: #ffff; */
+
+
+        }
+
+        .main {
+            /* background-color: #fff; */
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            background-color: #DEEDF5;
+            color: #00669B;
+
+
+        }
+
+        .main-body {
+            width: 100%;
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-top: 24px;
+        }
+
+
+        .text-color {
+            color: #00669B;
+        }
+
+        .header-img {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            height: auto;
+        }
+
+        .small-text {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 23.4px;
+
+        }
+
+        .mid-text {
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 32.5px;
+            text-align: center;
+            padding-top: 36px;
+
+        }
+
+        .big-text-padding {
+            padding-top: 30px;
+        }
+
+        .big-text {
+
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 27.3px;
+
+            text-align: center;
+
+
+        }
+
+        .img-graph {
+            padding-top: 11px;
+            padding-bottom: 11px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .center .small-text {
+            padding-top: 11px;
+        }
+
+        .green-text {
+            color: #03CD17;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 16.5px 24px 16.5px 24px;
+            gap: 10px;
+            border-radius: 36px;
+            border: none;
+            background-color: #00669B;
+            color: #fff;
+            opacity: 0px;
+            font-family: Poppins;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 19px;
+            text-align: center;
+        }
+
+        .momentum-graph {
+            padding-top: 20px;
+            padding-bottom: 63.5px;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #8BD1FF;
+            padding-top: 20px;
+            padding-bottom: 24px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .footer-logo {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .footer-text {
+            font-family: Gotham;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 16.9px;
+            color: #799FB7;
+            text-align: center;
+            padding-bottom: 15px;
+
+        }
+
+
+
+        /* 
+        @media (prefers-color-scheme: dark) {
+
+            .main {
+                background-color: #292929;
+                color: #fff;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <center class="wrapper">
+        <table class="main" width="100%">
+            <tr>
+                <td>
+                    <img src="pics/WEEKLYWRAP_BANNER 1.png" class="header-img" alt="">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+
+
+                    <table class="main-body">
+                        <tr>
+                            <td>
+                                <h1 class="small-text">
+                                    Hi Emiliy, <br>
+                                    Let’s look how your investments did this week!
+                                </h1>
+                            </td>
+                        </tr>
+                        <tr class="row-2">
+                            <td>
+                                <h1 class="mid-text">Your week on Surmount</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="center">
+                                <img src="pics/image 177.png" alt="">
+                            </td>
+                        </tr>
+                        <tr class="center">
+                            <td>
+                                <h1 class="small-text">
+                                    Your portfolio increased by <img src="pics/Shape.png" alt=""><span
+                                        class="green-text">$225</span> <br>
+                                    that’s <span class="green-text"> 9.8% more </span> than last week</h1>
+                            </td>
+                        </tr>
+                        <tr class="center">
+                            <td>
+                                <button class="btn">Check Dashboard</button>
+                            </td>
+                        </tr>
+                        <tr class="center">
+                            <td>
+                                <h1 class="big-text big-text-padding">
+                                    The “Future of Consumer Tech” strategy had a <br>
+                                    12% impact on your returns</h1>
+                            </td>
+                        </tr>
+                        <tr class="center">
+                            <td>
+                                <h1 class="big-text big-text-padding">
+                                    There are the last 10 trades Surmount made to your <br> Robinhood account</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="center img-graph">
+                                <img src="pics/image 178.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="center img-graph">
+                                <img src="pics/Rectangle 1904.png" alt="">
+                            </td>
+                        </tr>
+                        <tr class="center">
+                            <td>
+                                <h1 class="big-text">
+                                    “Sustainable Future” was the most profitable <br>
+                                    strategy this week</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="center momentum-graph">
+                                <img src="pics/image 179.png" alt="">
+                            </td>
+                        </tr>
+
+
+
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="footer">
+                        <tr class="center">
+                            <td>
+                                <a href="#"><img src="pics/x-social-media-logo-icon 1.png" alt=""></a>
+                                <a href="#"><img src="pics/linkedin-square-icon 1.png" alt=""></a>
+                                <a href="#"><img src="pics/black-instagram-logo-10672 1.png" alt=""></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="center footer-logo">
+                                <img src="pics/Beta-logo.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h1 class="footer-text">
+                                    Surmount AI does not provide financial advice and does not issue recommendations
+                                    <br>
+                                    or offer to buy stock or sell any security copyright 2024
+                                </h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h1 class="footer-text">
+                                    Surmount AI 919 N Market St, Suite 950 Wilmington Delaware 19801 <br>
+                                    You received this email because you are subscribed to Marketing information from
+                                    <br> Surmount AI.
+                                </h1>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+        </table>
+    </center>
+
+</body>
+
+</html>
